@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tervetuloa meidän häihin!</h1>
+        <p>Liittykää mukaamme juhlimaan meidän häitämme!</p>
+    </header>
+
+    <nav>
+        <a href="#our-story">Our Story</a>
+        <a href="#wedding-details">Wedding Details</a>
+        <a href="#rsvp">RSVP</a>
+    </nav>
+
+    <main>
+        <section id="our-story">
+            <h2>Our Story</h2>
+            <p>Kaikki alkoi 2019 kun tapasimme ensimmäistä kertaa Vuosaaressa</p>
+        </section>
+
+        <section id="wedding-details">
+            <h2>Hääpaikan tiedot</h2>
+            <p><strong>Päivämäärä:</strong> 5.7.2025</p>
+            <p><strong>Sijainti</strong> Espoon Kartano, Espoo</p>
+            <p>Liitykää kanssamme kartanon pihapiirissä vietettävään vihkimiseen ja muuhun aktiviteettiin</p>
+        </section>
+
+        <section id="rsvp">
+            <h2>Ilmoittautumislomake</h2>
+            <p>Tervetuloa juhlimaan kanssamme 5.7.2025! Ilmoittauduthan tällä lomakkeella viimeistään 30.4.2025</p>
+            <!-- Updated Form with PHP action -->
+            <form action="send-rsvp.php" method="POST">
+                <label for="name">Nimi:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Sähköpostisi:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="guests">Vieraiden määrä:</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [Your Names Here]. We look forward to celebrating with you!</p>
+    </footer>
+
+</body>
+</html>
